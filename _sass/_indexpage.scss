@@ -4,22 +4,113 @@
   height: 80vh;
 }
 .index-content {
-  box-shadow: inset -2px 0 0 0 $linkwater;
-  padding-right: 10px;
-}
-ul {
-  li {
-    display: block;
-  }
-  li:hover {
-    cursor: pointer;
+  @media screen and (min-device-width: 641px) {
+    overflow-y: scroll;
+    max-height: 82vh;
   }
 }
+.scrollbar {
+  @media screen and (min-device-width: 641px) {
+    margin-left: 22px;
+    float: left;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    &::-webkit-scrollbar {
+      width: 12px;
+      background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+      background-color: $tawnyport;
+    }
+  }
+}
+
 .index-content--chapter {
   font-weight: bold;
   font-family: 'Droid Arabic Kufi', sans-serif;
 }
 
-#container {
-   li { float: left; width: 20%; height: 50px; border-right: 1px dotted #CCC; border-bottom: 1px dotted #CCC; padding: 20px; }
+.toc {
+  @media screen and (max-device-width: 640px) {
+    padding: 0;
+    span {
+      text-align: right;
+      text-align-last: auto;
+    }
+  }
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 4.8rem;
+  font-family: $droid;
+  ul {
+    list-style-type:none ;
+    position: relative;
+    counter-reset: item;
+    li {
+      width: 100%;
+      display: table;
+      counter-increment: item;
+      text-transform: uppercase;
+      margin-bottom: .8rem;
+      .toc-page:before {
+        position: absolute;
+        right: 4rem;
+        left: 0;
+        margin-top: 1.8rem;
+        content: "";
+        display: block;
+      }
+      a:hover .toc-page:before {
+        border-bottom-width: 2px;
+      }
+    }
+  }
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  ul>li:before,
+  .chapter {
+    position: relative;
+    z-index: 2;
+  }
+  li>a {
+    display: inline-block;
+    width: 100%;
+  }
+  .chapter {
+    display: inline-block;
+  }
+  .toc-page {
+    float: left;
+  }
+  .li-chapter {
+    a{
+      font-weight: bold;
+      color: $tawnyport;
+    }
+
+  }
+  .li-post {
+    a{
+      color: $ebonyclay;
+    }
+    margin-right: .3em;
+  }
+}
+
+/*=== Colors === */
+
+
+.toc li .toc-page:before {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
 }

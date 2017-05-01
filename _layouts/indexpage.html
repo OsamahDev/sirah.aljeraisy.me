@@ -7,22 +7,30 @@
 
     <div class="row">
 
-      <div class="col index-content" id="container">
-          <ul>
-            <li><a href="#003"> المقدمة </a></li>
-            <li><a href="#008"> الفصل الأول - المولد والنشأة </a></li>
-            <li><a href="#009"> مسقط الرأس </a></li>
-            <li><a href="#010"> الميلاد </a></li>
-            <li><a href="#011"> في رحابِ القرية </a></li>
-            <li><a href="#013"> إشراقاتٌ قَرَويةٌ </a></li>
-            <li><a href="#014"> قبسٌ من ضياء </a></li>
-            <li><a href="#016"> في كَنَفِ الأُسرَة </a></li>
-            <li><a href="#017"> رحيلٌ مبكِّر </a></li>
-            <li><a href="#018"> الجدَّةُ الرَّؤوم </a></li>
-          </ul>
+      <div class="col index-content scrollbar" id="container">
+
+              <div class="toc">
+                  <ul>
+                  {% for post in site.posts reversed %}
+                  {% if post.name != null %}
+                  {% if post.layout == 'chapters' or post.layout == 'indexpage' %}
+                      <li class="li-chapter">
+                          <a href="#{{post.section}}" title="{{post.name}}">
+                              <span class="chapter">{{post.name}}</span>
+                          </a>
+                      </li>
+
+                      {% else %}
+                          <li class="li-post">
+                              <a href="#{{post.section}}" title="{{post.name}}"><span class="chapter">{{post.name}}</span>
+                              <span class="toc-page">{{post.section}}</span></a>
+                          </li>
+                    {% endif %}
+                  {% endif %}
+                  {% endfor %}
+                  </ul>
+              </div>
+              <!-- end .tocs -->
       </div>
-      <div class="col index-content"> </div>
-      <div class="col index-content"> </div>
-      <div class="col index-content"> </div>
     </div>
 </article>

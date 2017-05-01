@@ -1,5 +1,5 @@
 ---
 layout: indexpage
-section: 999
+section: 'book_index'
 name: الفهرس
 ---
