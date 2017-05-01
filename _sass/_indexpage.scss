@@ -60,17 +60,8 @@
       counter-increment: item;
       text-transform: uppercase;
       margin-bottom: .8rem;
-      .toc-page:before {
-        position: absolute;
-        right: 4rem;
-        left: 0;
-        margin-top: 1.8rem;
-        content: "";
-        display: block;
-      }
-      a:hover .toc-page:before {
-        border-bottom-width: 2px;
-      }
+
+
     }
   }
   ul,
@@ -101,6 +92,7 @@
 
   }
   .li-post {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
     a{
       color: $ebonyclay;
     }
@@ -109,8 +101,3 @@
 }
 
 /*=== Colors === */
-
-
-.toc li .toc-page:before {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-}
