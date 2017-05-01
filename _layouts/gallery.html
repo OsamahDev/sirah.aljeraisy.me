@@ -1,0 +1,42 @@
+<article class="wrapper post">
+  <div class="post-content">
+
+    {% if post.name != null %}
+    <div class="title">
+      <h1>
+        {{post.name}}
+      </h1>
+    </div>
+    {% else %}
+    <span> </span>
+    {% endif %}
+
+
+
+  <div class="row">
+
+    <div class="gallery-photo">
+    <figure class="photo-container">
+      <img src="/images/{{post.image1}}" alt="{{post.image1-caption}}">
+      <figcaption>
+        {{post.image1-caption}}
+      </figcaption>
+    </figure>
+    </div>
+    {% if post.image2 != null %}
+    <div class="gallery-photo">
+    <figure class="photo-container">
+      <img src="/images/{{post.image2}}" alt="{{post.image2-caption}}">
+      <figcaption>
+        {{post.image2-caption}}
+      </figcaption>
+    </figure>
+    </div>
+    {% endif %}
+
+  </div>
+
+
+  </div>
+
+</article>

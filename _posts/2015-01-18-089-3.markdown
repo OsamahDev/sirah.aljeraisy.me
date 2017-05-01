@@ -1,0 +1,9 @@
+---
+layout: gallery
+section: '089-3'
+name:
+image1: 089-3.jpg
+image1-caption: الجريسي في اجتماع مع إحدى الشركات اليابانية في مدينة طوكيو
+image2: 089-4.jpg
+image2-caption: الجريسي يرتدي الزي التقليدي الياباني
+---

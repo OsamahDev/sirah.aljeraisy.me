@@ -1,0 +1,41 @@
+Running the server:
+$ jekyll serve -w
+----------------------------
+Navigation bar
+
+    <nav><ul>
+      {% for node in site.posts reversed %}
+        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
+      {% endfor %}
+    </ul></nav>
+
+---------------------------
+highlited: `_posts`
+---------------------------
+---
+layout: post
+title:  "Welcome to Jekyll!"
+bg: green
+---
+--------------------------
+numbering and bulleting:
+1. Checkout your github-pages branch
+
+  - `git checkout gh-pages` for a standalone or existing page
+--------------------------
+This is italic:
+*username.github.io*
+--------------------------
+This is bold:
+**bad**
+--------------------------
+bold and italic:
+***master***
+--------------------------
+This is how links work:
+[Title](#link)
+--------------------------
+This is H2:
+## Setup as user homepage
+--------------------------

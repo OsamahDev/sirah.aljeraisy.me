@@ -1,0 +1,63 @@
+.chapterPage {
+  height: 100vh;
+  background-color: $tawnyport;
+
+}
+.chapterPage-content--parent {
+height: 40%;
+}
+.chapterPage-content--parent:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+.chapterPage-content--child {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  h1 {
+    font-size: 4.5vw;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  @media screen and (max-device-width: 640px) {
+    h1,h2 {
+      font-size: 100%;
+      white-space: inherit !important;
+      line-height: normal !important;
+    }
+  }
+  h1,h2 {
+  border-collapse: separate;
+  border-spacing: 16px 0;
+  border-spacing: 1rem 0;
+  color: $white;
+  display: table;
+  line-height: .25;
+  margin: 1em 0 .9em;
+  table-layout: auto;
+  text-align: center;
+  text-shadow: .0625em .0625em 0 rgba(0, 0, 0, .2);
+  white-space: nowrap;
+  width: 100%;
+}
+h1:before,h1:after,
+h2:before,h2:after,
+{
+  border-top: 3px double $white;
+  content: '';
+  display: table-cell;
+  width: 50%;
+  @media screen and (max-device-width: 640px) {
+    display: none;
+  }
+}
+h1:before,h1:after {
+  border-top-width: 6px;
+  border-top-style: solid;
+}
+
+}

@@ -1,0 +1,9 @@
+---
+layout: chapters
+section: 'chapter-1'
+ischapter: 1
+name: الفصل الأول - المولد والنشأة
+---
+# الفصل الأول
+
+## المولد والنشأة

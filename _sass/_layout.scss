@@ -1,0 +1,61 @@
+/**
+ * Site header
+ */
+ .wrapper-head {
+   padding-right: 2vw;
+   padding-left: 2vw;
+   a:link {
+     text-decoration: none;
+     color: $white;
+   }
+   a:visited {
+     color: $white;
+   }
+   a:hover {
+       color: $white;
+   }
+ }
+.site-header {
+  top: 0;
+  border-bottom: 8px solid $tawnyport;
+  min-height: 78px;
+  background-color: $ebonyclay;
+  // Positioning context for the mobile navigation icon
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.site-title {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: right;
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  color: #fff;
+  img {
+    width: 275px;
+  }
+}
+.site-nav {
+  font-size: 37px;
+  font-weight: bold;
+  float: left;
+  a {
+  color: $linkwater;
+  }
+}
+@media screen and (max-device-width: 640px) {
+  .site-header {
+    min-height: 57px;
+  }
+  .site-nav {
+    font-size: 1em;
+  }
+  .site-title {
+    font-size: 0.5em;
+    img {
+      width: 13em;
+    }
+  }
+}

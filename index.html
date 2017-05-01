@@ -1,0 +1,22 @@
+---
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+
+<div id="fullpage" class="home">
+
+    {% for post in site.posts reversed %}
+
+    <section id="{{post.section}}" class="section">
+      {% include_relative _layouts/{{post.layout}}.html %}
+    </section>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+---
+layout: gallery
+section: '092'
+name:
+image1: 092.jpg
+image1-caption: مجلس إدارة مؤسسة الجريسي
+---

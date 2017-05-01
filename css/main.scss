@@ -1,0 +1,56 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+//Those are aljeraisy theme colors
+$black:        #111111;
+$white:        #eef7fb;
+$thunder:      #261923;
+$ebonyclay:    #1e212e;
+$tawnyport:    #692536;
+$linkwater:    #c8e2f0;
+
+// Our variables
+$base-font-family:'Amiri', serif;
+$base-font-size:   21px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.8;
+
+$spacing-unit:     2vw;
+
+$wrapper-unit: 20vw;
+$wrapper-unit-mobile: 10vw;
+
+$text-color:       $black;
+
+// Width of the content area
+$content-width:    100%;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "first",
+        "default",
+        "chapters",
+        "indexpage"
+;

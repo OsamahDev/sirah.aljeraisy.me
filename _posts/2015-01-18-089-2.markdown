@@ -1,0 +1,9 @@
+---
+layout: gallery
+section: '089-2'
+name:
+image1: 089-5.jpg
+image1-caption: الجريسي في زيارته إلى مصنع آلات التصوير يوبكس
+image2: 089-6.jpg
+image2-caption: الجريسي في إحدى زياراته لليابان
+---

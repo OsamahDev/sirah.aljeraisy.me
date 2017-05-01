@@ -1,0 +1,187 @@
+/*
+  * general
+  */
+.post {
+  margin-top: 100px;
+  margin-bottom: 5px;
+  min-height: 100vh;
+}
+.section2 {
+  text-align: center;
+  padding-right: 3vh;
+}
+@media screen and (max-device-width: 640px) {
+  .section2 {
+    padding-right: 0;
+  }
+}
+/*
+  * title
+  */
+h1 {
+  border-collapse: separate;
+  border-spacing: 16px 0;
+  border-spacing: 1rem 0;
+  display: table;
+  line-height: 0.25;
+  margin: 1em 0 0.5em;
+  table-layout: auto;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  @media screen and (max-device-width: 640px) {
+    line-height: normal;
+    white-space: inherit;
+  }
+}
+h1:before,
+h1:after,
+ {
+  border-top: 3px double $tawnyport;
+  content: '';
+  display: table-cell;
+  width: 50%;
+  @media screen and (max-device-width: 640px) {
+    display: none;
+  }
+}
+h1:before,
+h1:after {
+  border-top-width: 6px;
+}
+
+/*
+  * image
+  */
+.imagecontaner-first {
+  height: 100%;
+}
+.imagecontaner {
+  height: 40%;
+}
+.imagecontaner:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+figure {
+  display: inline-block;
+  vertical-align: middle;
+  border: 13px solid $white;
+  box-shadow: 0 0 16px $black;
+  max-width: 30vw;
+  @media screen and (max-device-width: 640px) {
+    max-width: 100%;
+  }
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 20px;
+}
+figcaption {
+  position: absolute;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
+figure:hover figcaption {
+  opacity: 1;
+}
+figure:before {
+  content: "";
+  position: absolute;
+  font-weight: 800;
+  background: url(/images/about.svg);
+  background-size: cover;
+  text-shadow: 0 0 5px white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  -moz-transition: all 0.6s ease;
+  opacity: 0.75;
+}
+figure:hover:before {
+  opacity: 0;
+}
+.photo-container:before {
+  bottom: 10px;
+  right: 10px;
+}
+.photo-container figcaption {
+  right: 0;
+  bottom: -30%;
+}
+.photo-container:hover figcaption {
+  bottom: 0;
+}
+/*
+  * Gallery image
+  */
+  .gallery-photo {
+    width: 100%;
+    text-align: center;
+    figure {
+      float: inherit;
+    }
+  }
+/*
+  *
+  */
+  .photo-two{
+  margin-bottom: 40px;
+    .image-photo-two{
+    position:relative;
+    min-height:70vh; /* this method requires min height*/
+    padding:1vh;
+    .photo-two-inside{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      @media screen and (max-device-width: 640px) {
+        position: static;
+        transform:none;
+        height: 100%;
+        }
+    }
+  }
+}
+
+
+/*
+  ** poem
+  */
+
+  .topoem {
+    display: none;
+  }
+  .poem {
+    margin: 0 auto;
+    width: 40%;
+    font-size: 90%;
+    @media screen and (max-device-width: 640px) {
+      width: 100%;
+      }
+  }
+  .poem-line {
+    width: 100%;
+    justify-content: space-between;
+  }
+  span {
+    display: inline-block;
+    text-align: justify;
+    text-align-last: justify;
+  }

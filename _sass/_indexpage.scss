@@ -1,0 +1,25 @@
+.index {
+  margin-top: 100px;
+  margin-bottom: 5px;
+  height: 80vh;
+}
+.index-content {
+  box-shadow: inset -2px 0 0 0 $linkwater;
+  padding-right: 10px;
+}
+ul {
+  li {
+    display: block;
+  }
+  li:hover {
+    cursor: pointer;
+  }
+}
+.index-content--chapter {
+  font-weight: bold;
+  font-family: 'Droid Arabic Kufi', sans-serif;
+}
+
+#container {
+   li { float: left; width: 20%; height: 50px; border-right: 1px dotted #CCC; border-bottom: 1px dotted #CCC; padding: 20px; }
+}

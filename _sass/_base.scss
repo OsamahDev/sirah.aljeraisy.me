@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Amiri:400,700,400italic,700italic&subset=arabic,latin);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+    direction: rtl;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background-image: url("/images/greyzz.png");
+    -webkit-text-size-adjust: 100%;
+    /*
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    */
+}
+
+/**
+  * links
+  */
+a:link {
+  text-decoration: none;
+  color: $tawnyport;
+}
+a:visited {
+  color: $tawnyport;
+}
+a:hover {
+    color: $thunder;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    max-height: 60vh;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: 'Droid Arabic Kufi', sans-serif;
+    color: $tawnyport;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+h4 {
+  font-size: 1.325em;
+}
+h5 {
+  font-size: 0.83em;
+}
+h6 {
+  font-size: 0.67em;
+}
+@media screen and (max-device-width: 640px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+  }
+}
+
+/**
+  * Paragraph
+  */
+p {
+  text-align: justify;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - ( #{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - ( #{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $wrapper-unit;
+    padding-left: $wrapper-unit;
+    @media screen and (max-device-width: 640px) {
+      padding-right: $wrapper-unit-mobile;
+      padding-left: $wrapper-unit-mobile;
+    }
+}
+
+/**
+  * Section
+  */
+.section {
+  border-top: solid 10px $tawnyport;
+}
+/**
+  * Row
+  */
+.row {
+  padding-bottom: 5vh;
+  align-items: center;
+}

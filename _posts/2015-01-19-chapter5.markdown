@@ -1,0 +1,9 @@
+---
+layout: chapters
+section: 'chapter-5'
+ischapter: 1
+name: الفصل الخامس - مجموعة الجريسي
+---
+# الفصل الخامس
+
+## مجموعة الجريسي
