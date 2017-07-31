@@ -1,0 +1,52 @@
+---
+layout: default
+section: '180'
+name:
+image1: 
+image1-caption: 
+---
+
+<div class="poem">
+<span class="poem-line">
+جيتَه وانا شاكرْ وحامِدْ وابا اقُولْ
+</span>
+<span class="poem-line">
+في مَكتَب اللِّي مِن نصَاهْ اعْتَزا بِهْ
+</span>
+<span class="poem-line">
+فَكَّهْ مِن الصَّعْبات والجُور والهُولْ
+</span>
+<span class="poem-line">
+ودلَّهْ على دَرب النَّبي والصحابهْ
+</span>
+<span class="poem-line">
+سَلمانْ رَمز الجُودْ بالفِعل والقُولْ
+</span>
+<span class="poem-line">
+إذا قصَدْ صَعْب الَمطالب سَخَى بِهْ
+</span>
+<span class="poem-line">
+تراهْ يرعَى دِيرَتي يا هْل الهُولْ
+</span>
+<span class="poem-line">
+وِانْ جَالَها لازِم رَعَاهْ وسَعَى بِهْ
+</span>
+<span class="poem-line">
+الله يعِزَّه في ذِرا راعي الطولْ
+</span>
+<span class="poem-line">
+شَيخٍ إذا رَامَ الثرَيا غَزَى بهْ
+</span>
+<span class="poem-line">
+فَهْد العربْ سِيفٍ على الظِّلمْ مَسْلُولْ
+</span>
+<span class="poem-line">
+رِيفِ الصَدِيق ودِرْع مَن هُو لَجَا بهْ
+</span>
+<span class="poem-line">
+وما دَامِ لِلْفارِسْ درُوعْ ومَصْقُولْ
+</span>
+<span class="poem-line">
+عبدَالله وسلطانْ عِزّ ومَهَابَهْ
+</span>
+</div>

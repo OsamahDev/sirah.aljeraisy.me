@@ -1,0 +1,52 @@
+---
+layout: default
+section: '181'
+name:
+image1: 
+image1-caption: 
+---
+
+<div class="poem">
+<span class="poem-line">
+وِانْ دَقَّتْ الأشرَارْ للحرب بِطْبولْ
+</span>
+<span class="poem-line">
+بالعَقْل والحِكمَه وعَزْم وحزَابهْ
+</span>
+<span class="poem-line">
+أبْعدْ لهَبْهَا وحِلْ ما كان مَفْتُولْ
+</span>
+<span class="poem-line">
+ورَفْرِف عَلَمْنا فُوقْ عَالي سحَابهْ
+</span>
+<span class="poem-line">
+ومَا دامْ للأشْعَارْ مَعْنى ومَدْلُولْ
+</span>
+<span class="poem-line">
+يازِنْ كَلامِي شَاعرٍ يقْتَدى بِهْ
+</span>
+<span class="poem-line">
+عبدَالله السلُّومْ شَاعِر ومَقْبولْ
+</span>
+<span class="poem-line">
+حكمَهْ على شِعْري يحَدِّدْ صوَابَهْ
+</span>
+<span class="poem-line">
+عَساهْ عقبِ إليا سَمْعْ يتَّبَعْ القُولْ
+</span>
+<span class="poem-line">
+وعُقْب السُّيولْ اللِّي تلبَّدْ سَحابهْ
+</span>
+<span class="poem-line">
+وعلى خُشومْ طُويقْ بَارِقْ وهَمْلُولْ
+</span>
+<span class="poem-line">
+وخَشْم الحْصِان اللِّي زَهَا والغَرابهْ
+</span>
+<span class="poem-line">
+تحدَّرتْ وِدْيان وِشْعَابْ وسهُولْ
+</span>
+<span class="poem-line">
+وعَمّ الفَرَحْ رَغْبَهْ ومَنْ هُو نَشا بِهْ
+</span>
+</div>

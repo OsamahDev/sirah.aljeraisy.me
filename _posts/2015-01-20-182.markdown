@@ -1,0 +1,53 @@
+---
+layout: default
+section: '182'
+name:
+image1: 
+image1-caption: 
+---
+
+ومن جميل قصيدِه أيضاً، قصيدةٌ حَوت معاني سامية، ونصائحَ ثمينة، يقول فيها:
+
+<div class="poem">
+<span class="poem-line">
+وما المرءُ إلا رَاحلٌ ومُودِّعٌ
+</span>
+<span class="poem-line">
+ومَن ودَّع الأحبابَ يومًا مُودَّعُ
+</span>
+<span class="poem-line">
+ولا يأسَ من وعدٍ من الله قاطعٌ
+</span>
+<span class="poem-line">
+لمن يفعل الخيراتِ والفضلُ زارعُ
+</span>
+<span class="poem-line">
+بأنَّ له قصراً مُشيداً ومَوقعاً
+</span>
+<span class="poem-line">
+تحفُّ بهِ الأنهارُ والغَرسُ شارعُ
+</span>
+<span class="poem-line">
+بأعلى جِنانِ الخُلدِ في خَيرِ مَرتَعٍ
+</span>
+<span class="poem-line">
+بصُحبةِ مَن يهدي لخيرٍ ويتْبعُ
+</span>
+<span class="poem-line">
+رسولٍ إلى كلِّ البرِيةِ نافعٍ
+</span>
+<span class="poem-line">
+رؤوفٍ بكلِّ النَّاس للخَلقِ شَافعُ
+</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+

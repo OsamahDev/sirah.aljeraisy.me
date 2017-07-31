@@ -1,0 +1,34 @@
+---
+layout: default
+section: '183'
+name:
+image1: 
+image1-caption: 
+---
+
+<div class="poem">
+<span class="poem-line">
+وأنَّ على كلٍّ من الله دَافعاً
+</span>
+<span class="poem-line">
+ليَعملَ في دُنْيَاهُ والكونُ واسِعُ
+</span>
+<span class="poem-line">
+ويَسعَى كَما لوْ كان يبْقى مُمَتَّعا
+</span>
+<span class="poem-line">
+وَيعْملُ كما لَوْ كانَ في الحالِ نازِعُ
+</span>
+<span class="poem-line">
+بهذا يكونُ المرءُ للهِ طَائعًا
+</span>
+<span class="poem-line">
+ويُمْسي قرِير العَينِ، راضٍ وقانِعُ
+</span>
+<span class="poem-line">
+بهذا قطَعتُ العَهْدَ للهِ راكِعًا
+</span>
+<span class="poem-line">
+أسِيرُ على نهْجِ النبيِّ مُدافِعُ
+</span>
+</div>

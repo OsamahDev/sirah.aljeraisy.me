@@ -1,0 +1,9 @@
+---
+layout: chapters
+section: 'chapter-7'
+ischapter: 1
+name: الفصل السابع - مرتكزات النجاح
+---
+# الفصل السابع
+
+## مرتكزات النجاح
