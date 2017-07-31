@@ -1,5 +1,6 @@
-<article class="wrapper post">
-  <div class="post-content">
+<article class="wrapper post outer">
+  <div class="middle">
+  <div class="post-content inner">
 
     {% if post.name != null %}
     <div class="title">
@@ -14,9 +15,8 @@
 
 
   <div class="row">
-
     <div class="gallery-photo">
-    <figure class="photo-container">
+    <figure {% if post.image2 != null %} class="photo-container"  {% else %} class="photo-container gallery-photo-inherit" {% endif %}>
       <img src="/images/{{post.image1}}" alt="{{post.image1-caption}}">
       <figcaption>
         {{post.image1-caption}}
@@ -38,5 +38,5 @@
 
 
   </div>
-
+  </div>
 </article>

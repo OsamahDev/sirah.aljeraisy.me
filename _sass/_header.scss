@@ -1,0 +1,62 @@
+/**
+ * Site header
+ */
+.wrapper-head {
+  padding-right: 2vw;
+  padding-left: 2vw;
+  a:link {
+    text-decoration: none;
+    color: $white;
+  }
+  a:visited {
+    color: $white;
+  }
+  a:hover {
+    color: $white;
+  }
+}
+
+.site-header {
+  min-height: 57px;
+  background-color: $ebonyclay;
+  // Positioning context for the mobile navigation icon
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  border-bottom: 8px solid $tawnyport;
+  @include s_larger-than-tablet {
+      min-height: 78px;
+  }
+}
+.site-nav {
+  font-size: 1em;
+  font-weight: bold;
+  float: left;
+  a {
+    color: $linkwater;
+  }
+  @include s_larger-than-tablet {
+    font-size: 37px;
+  }
+}
+.site-title {
+  font-size: 0.5em;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+  text-align: right;
+  font-family: $droid;
+  color: #fff;
+  img {
+    width: 13em;
+  }
+  @include s_larger-than-tablet {
+    font-size: 21px;
+    img {
+      width: 275px;
+    }
+  }
+}
+

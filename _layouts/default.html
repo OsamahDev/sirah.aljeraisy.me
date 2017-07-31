@@ -1,5 +1,6 @@
-<article class="wrapper post">
-  <div class="post-content">
+<article class="wrapper post outer">
+  <div class="middle">
+  <div class="post-content inner">
 
     {% if post.name != null %}
     <div class="title">
@@ -13,22 +14,17 @@
 
 
     {% if post.image != null %}
-  <div class="row">
-    <div>
+
     <figure class="photo-container">
       <img src="/images/{{post.image}}" alt="{{post.image-caption}}">
       <figcaption>
         {{post.image-caption}}
       </figcaption>
     </figure>
-    </div>
-
-    <div class="col">
       <div class="text-block">
         {{ post.content }}
       </div>
-    </div>
-  </div>
+
     {% else %}
     <div class="photo-two">
       <div class="image-photo-two">
@@ -39,6 +35,7 @@
     </div>
     {% endif %}
 
+  </div>
   </div>
 
 </article>

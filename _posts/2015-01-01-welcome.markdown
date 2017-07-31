@@ -3,24 +3,6 @@ layout: first
 section: 'welcome'
 ---
 
-<div class="col">
-<div class="post-content--bigPhoto">
-<img src="/images/big-photo.jpg"/>
+<div class="first-cover">
+<img src="/images/cover.gif"/>
 </div>
-</div>
-
-<div class="post-content--first-right col">
-
-<div class="post-content--aljerasyname">
-<img src="/images/aljeraisy.svg"/>
-</div>
-
-<h2>
-سيرة ومسيرة عبد الرحمن بن علي الجريسي
-<h3>
-عميد رجال الأعمال ورئيس مجلس الغرف السعودية
-</h3>
-<hr>
-<h3>
-تأليف: د. خالد بن عبد الرحمن الجريسي
-</h3>

@@ -1,7 +1,7 @@
 ---
 layout: default
 section: '029'
-name: آثارٌ باقية
+name:
 image:
 image-caption:
 ---

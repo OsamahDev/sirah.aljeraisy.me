@@ -1,0 +1,40 @@
+// Breakpoints
+/*
+ Usage:
+ .sidebar {
+  width: 60%;
+  float: left;
+  margin: 0 2% 0 0;
+  @include s_larger-than-mobile {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}
+*/
+
+@mixin s_larger-than-mobile {
+  @media (min-width: $larger-than-mobile) {
+    @content;
+  }
+}
+@mixin s_larger-than-phablet {
+  @media (min-width: $larger-than-phablet) {
+    @content;
+  }
+}
+@mixin s_larger-than-tablet {
+  @media (min-width: $larger-than-tablet) {
+    @content;
+  }
+}
+@mixin s_larger-than-desktop {
+  @media (min-width: $larger-than-desktop) {
+    @content;
+  }
+}
+@mixin s_larger-than-desktop-hd {
+  @media (min-width: $larger-than-desktop-hd) {
+    @content;
+  }
+}

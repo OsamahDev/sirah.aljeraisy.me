@@ -22,36 +22,29 @@ $droid: 'Droid Arabic Kufi', sans-serif;
 
 $spacing-unit:     2vw;
 
-$wrapper-unit: 20vw;
-$wrapper-unit-mobile: 10vw;
+$wrapper-unit: 10vw;
+$wrapper-unit-mobile: 5vw;
 
 $text-color:       $black;
 
 // Width of the content area
 $content-width:    100%;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
 
-
+// Screen Sizes
+$larger-than-mobile: 400px;
+$larger-than-phablet: 550px;
+$larger-than-tablet: 750px;
+$larger-than-desktop: 1000px;
+$larger-than-desktop-hd: 1200px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting",
-        "first",
-        "default",
-        "chapters",
-        "indexpage"
+        'mixins',
+        'base',
+        'layout',
+        'header',
+        'first',
+        'chapters',
+        'indexpage'
 ;
