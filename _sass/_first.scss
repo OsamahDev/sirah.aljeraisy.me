@@ -1,45 +1,62 @@
 .first {
   min-height: 100vh;
-  margin-top: 4vh;
+  //margin-top: 4vh;
   background-color: #000000;
+  background-image: url("/images/first-bg.jpg");
   position: relative;
+
   .first-cover {
     position: relative;
     height: 100vh;
-    text-align: center;
-    img {
-      height: 100%;
-    }
     @include s_larger-than-tablet {
-      position: absolute;
-      bottom: 0;
-      right: 0;
+      float: right;
+      width: 45%;
     }
-  }
-  .first-page-text {
-    display: none;
-    @include s_larger-than-tablet {
-      display: table;
-    }
-  }
-  .thisBook {
-    display: none;
-    @include s_larger-than-tablet {
-      display: block;
-      float: left;
-      width: 50%;
-      margin-left: 10%;
-      h2{
-        color: $linkwater;
+    .first-image {
+      @include s_larger-than-tablet {
+        bottom: 0;
+        right: 0;
+        width: 30vw;
+        height: auto;
+        position: absolute;
       }
+    }
+    .first-title {
+      width: 50%;
+      margin-top: 2em;
+      path {
+        fill: $kindOfYellow;
+      }
+    }
+    .first-subtitle {
       p {
+        text-align: center;
         color: $white;
-        font: 400 18px/1.8 "Amiri", serif;
       }
     }
   }
 }
 
+.first-page-text {
+  display: none;
+  @include s_larger-than-tablet {
+    position: relative;
+    height: 100vh;
+    display: block;
+    float: left;
+    width: 35%;
+    margin-left: 10%;
+  }
+  .thisBook {
+    h2{
+      color: $linkwater;
+    }
+    p {
+      color: $white;
+      font: 400 18px/1.8 "Amiri", serif;
+    }
+  }
+}
 
 .ihdaa {
   min-height: 100vh;
