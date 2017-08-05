@@ -3,21 +3,24 @@
   */
 .section {
   border-top: solid 10px $tawnyport;
-  overflow: hidden;
+  position: relative;
+  @include s_larger-than-tablet {
+    overflow: hidden;
+  }
 }
 
 .outer {
-  display: table;
-  position: relative;
-  height: 100vh;
-  width: 100%;
+  @include s_larger-than-tablet {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
 }
-
-.middle {
-  display: table-cell;
-  vertical-align: middle;
-}
-
 .inner {
   margin-left: auto;
   margin-right: auto;
@@ -71,6 +74,7 @@ figcaption {
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
+  font-size: 17px;
 }
 figure:hover figcaption {
   opacity: 1;
@@ -109,8 +113,8 @@ figure:hover:before {
   * Gallery image
   */
   .gallery-photo {
-    width: 100%;
     text-align: center;
+    display: inline-block;
   }
   .gallery-photo-inherit {
     float: inherit;
@@ -123,11 +127,13 @@ figure:hover:before {
   .poem {
     font-family: $droid;
     margin: 0 auto;
-    width: 22%;
     font-size: 90%;
-    @media screen and (max-device-width: 640px) {
-      width: 100%;
-      }
+    width: 95%;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 1em;
+    @include s_larger-than-tablet {
+      width: 25%;
+    }
   }
   .poem-line {
     width: 100%;
@@ -137,4 +143,19 @@ figure:hover:before {
     display: inline-block;
     text-align: justify;
     text-align-last: justify;
+  }
+
+  .floating-title {
+    @include s_larger-than-tablet {
+      float: right;
+      margin: 0.3em .3em;
+      border-left: 5px solid $tawnyport;
+      h1 {
+        margin: 0 0 0 0.2em;
+      }
+    }
+  }
+  .title {
+    text-align: center;
+
   }

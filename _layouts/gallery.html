@@ -17,7 +17,7 @@
   <div class="row">
     <div class="gallery-photo">
     <figure {% if post.image2 != null %} class="photo-container"  {% else %} class="photo-container gallery-photo-inherit" {% endif %}>
-      <img src="/images/{{post.image1}}" alt="{{post.image1-caption}}">
+      <img data-src="/images/{{post.image1}}" alt="{{post.image1-caption}}">
       <figcaption>
         {{post.image1-caption}}
       </figcaption>
@@ -26,7 +26,7 @@
     {% if post.image2 != null %}
     <div class="gallery-photo">
     <figure class="photo-container">
-      <img src="/images/{{post.image2}}" alt="{{post.image2-caption}}">
+      <img data-src="/images/{{post.image2}}" alt="{{post.image2-caption}}">
       <figcaption>
         {{post.image2-caption}}
       </figcaption>

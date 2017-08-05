@@ -1,41 +1,60 @@
 <article class="wrapper post outer">
-  <div class="middle">
   <div class="post-content inner">
 
     {% if post.name != null %}
-    <div class="title">
-      <h1>
-        {{post.name}}
-      </h1>
-    </div>
-    {% else %}
-    <span> </span>
-    {% endif %}
-
-
-    {% if post.image != null %}
-
-    <figure class="photo-container">
-      <img src="/images/{{post.image}}" alt="{{post.image-caption}}">
-      <figcaption>
-        {{post.image-caption}}
-      </figcaption>
-    </figure>
+      {% if post.image != null %}
+      <div class="title">
+        <h1>
+          {{post.name}}
+        </h1>
+      </div>
+      <figure class="photo-container">
+        <img data-src="/images/{{post.image}}" alt="{{post.image-caption}}">
+        <figcaption>
+          {{post.image-caption}}
+        </figcaption>
+      </figure>
       <div class="text-block">
         {{ post.content }}
       </div>
 
+      {% else %}
+      <div class="title floating-title">
+        <h1>
+          {{post.name}}
+        </h1>
+      </div>
+      <div class="photo-two">
+        <div class="image-photo-two">
+          <div class="photo-two-inside">
+            {{ post.content }}
+          </div>
+        </div>
+      </div>
+      {% endif %}
     {% else %}
-    <div class="photo-two">
-      <div class="image-photo-two">
-        <div class="photo-two-inside">
+      <span> </span>
+      {% if post.image != null %}
+
+      <figure class="photo-container">
+        <img data-src="/images/{{post.image}}" alt="{{post.image-caption}}">
+        <figcaption>
+          {{post.image-caption}}
+        </figcaption>
+      </figure>
+      <div class="text-block">
         {{ post.content }}
       </div>
+
+      {% else %}
+      <div class="photo-two">
+        <div class="image-photo-two">
+          <div class="photo-two-inside">
+            {{ post.content }}
+          </div>
+        </div>
       </div>
-    </div>
+      {% endif %}
     {% endif %}
-
   </div>
-  </div>
-
 </article>

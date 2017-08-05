@@ -6,6 +6,7 @@
   .first-cover {
     position: relative;
     height: 100vh;
+    text-align: center;
     img {
       height: 100%;
     }
@@ -15,7 +16,28 @@
       right: 0;
     }
   }
-
+  .first-page-text {
+    display: none;
+    @include s_larger-than-tablet {
+      display: table;
+    }
+  }
+  .thisBook {
+    display: none;
+    @include s_larger-than-tablet {
+      display: block;
+      float: left;
+      width: 50%;
+      margin-left: 10%;
+      h2{
+        color: $linkwater;
+      }
+      p {
+        color: $white;
+        font: 400 18px/1.8 "Amiri", serif;
+      }
+    }
+  }
 }
 
 
