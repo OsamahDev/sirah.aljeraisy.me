@@ -15,18 +15,20 @@
   <script type="text/javascript">
     $(document).ready(function() {
 
-      if ($(window).width() < 1280) {
-        return;
-      } else {
+//      if ($(window).width() < 1280) {
+//        return;
+//      } else {
         //desktop
         $('#fullpage').fullpage({
             //Scrolling
             scrollBar: true,
             //Accessibility
             keyboardScrolling: true,
-            normalScrollElements: '.scrollbar'
+            normalScrollElements: '.scrollbar',
+            //responsiveWidth: 1279,
+            scrollOverflow: true
         });
-      }
+      //}
     });
 </script>
 

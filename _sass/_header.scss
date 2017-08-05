@@ -35,13 +35,13 @@
   font-size: 1em;
   font-weight: bold;
   float: left;
+  padding: 0.4em;
+  background-color: $tawnyport;
   a {
     color: $linkwater;
   }
   @include s_larger-than-tablet {
     font-size: 27px;
-    padding: 0.4em;
-    background-color: $tawnyport;
   }
 }
 
