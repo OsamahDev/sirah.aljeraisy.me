@@ -1,5 +1,5 @@
 <article class="wrapper post outer">
-  <div class="post-content inner">
+  <div class="post-content inner scrollable">
 
     {% if post.name != null %}
       {% if post.image != null %}
@@ -20,7 +20,7 @@
 
       {% else %}
       <div class="title floating-title my-element">
-        <h1>
+        <h1 {% if post.long-title %} class="longTitle" {% endif %}>
           {{post.name}}
         </h1>
       </div>

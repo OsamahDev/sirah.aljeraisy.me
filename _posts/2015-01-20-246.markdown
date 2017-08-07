@@ -2,6 +2,7 @@
 layout: default
 section: '246'
 name: المجتمعُ السعوديُّ بينَ الإسرافِ والادِّخار
+long-title: true
 image:
 image-caption:
 ---

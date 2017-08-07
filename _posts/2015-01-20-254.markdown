@@ -2,6 +2,7 @@
 layout: default
 section: '254'
 name: السوقُ الخليجيةُ ومستقبلُ الاقتصادِ الخليجيِّ
+long-title: true
 image1: 
 image1-caption: 
 ---

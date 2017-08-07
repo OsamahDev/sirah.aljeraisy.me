@@ -2,6 +2,7 @@
 layout: default
 section: '260'
 name: الحياةُ الفِطريةُ من منظورٍ دينيٍّ اقتصاديٍّ ثقافيٍّ
+long-title: true
 image: 260.jpg
 image-caption: الشيخ عبدالرحمن الجريسي
 ---
