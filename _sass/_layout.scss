@@ -25,6 +25,29 @@
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  @include s_larger-than-tablet {
+    width: 800px;
+    max-height: 700px;
+    overflow-y: auto;
+    padding: .5em;
+    &::-webkit-scrollbar {
+      width: 12px;
+      //background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border: solid 3px transparent;
+      border-radius: 10px;
+      background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb {
+      border: solid 3px transparent;
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+      background-color: $tawnyport;
+    }
+
+  }
 }
 
 /*
@@ -45,21 +68,20 @@
 }
 
 figure {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   border: 13px solid $white;
   box-shadow: 0 0 16px $black;
   max-width: 100%;
   position: relative;
-  float: none;
   overflow: hidden;
   margin: 20px;
   @include s_larger-than-tablet {
-    max-width: 30vw;
-    float: right;
-    margin: 0 20px 20px;
+    max-width: 25vw;
+    margin: 20px auto;
     img {
-      max-height: 500px;
+      width: 100%;
+      height: auto;
     }
   }
 }
@@ -132,7 +154,7 @@ figure:hover:before {
     -webkit-margin-before: 0;
     -webkit-margin-after: 1em;
     @include s_larger-than-tablet {
-      width: 25%;
+      width: 40%;
     }
   }
   .poem-line {
@@ -144,18 +166,27 @@ figure:hover:before {
     text-align: justify;
     text-align-last: justify;
   }
-
-  .floating-title {
-    @include s_larger-than-tablet {
-      float: right;
-      margin: 0.3em .3em;
-      border-left: 5px solid $tawnyport;
-      h1 {
-        margin: 0 0 0 0.2em;
-      }
-    }
-  }
   .title {
     text-align: center;
+  }
+  .floating-title {
 
+    @include s_larger-than-tablet {
+      width: 180px;
+      height: 100px;
+      float: right;
+      margin: 0.3em 0.3em 0.3em .7em;
+      text-align: right;
+      position: relative;
+      h1 {
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+      }
+    }
   }

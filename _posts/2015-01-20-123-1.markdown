@@ -1,7 +1,7 @@
 ---
 layout: default
-section: '123'
-name: في رئاسة مجلس الغرف السعودية
+section: '123-2'
+name:
 image:
 image-caption:
 ---

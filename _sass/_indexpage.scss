@@ -41,6 +41,12 @@
 }
 
 .toc {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $droid;
+  text-align: right;
   span {
     text-align: right;
     text-align-last: auto;
@@ -48,11 +54,6 @@
   @include s_larger-than-tablet {
     padding: 4.8rem;
   }
-  position: relative;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 0;
-  font-family: $droid;
   ul {
     list-style-type:none ;
     position: relative;
